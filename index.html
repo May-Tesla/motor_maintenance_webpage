@@ -10,7 +10,7 @@
  <script type="text/javascript" src="js/jquery.js"></script>
  <script type="text/javascript" src="js/highstock.js"></script> 
  <script type="text/javascript" src="js/script.js"></script>
- <script src="https://code.highcharts.com.cn/highcharts/highcharts-more.js"></script>
+ <script type="text/javascript"src="https://code.highcharts.com.cn/highcharts/highcharts-more.js"></script>
  <script type="text/javascript" src="js/gaikuangcishu.js"></script>
  <script type="text/javascript" src="js/jiangkangdu-leidatu.js"></script>
  <script type="text/javascript" src="js/health-cv.js"></script>
@@ -179,21 +179,15 @@
    
     <div class="header-c"><!---   header外层    -->
       <div class="page-width"><!---   header内层    -->
-        <!--<a href="#" id="header_logo"></a>-->
-        <p id="header_title"></p>
-        <div id="search" class="clearfix"><!---   搜索    -->
-         <div class="main-side fr">
-          <div class="promote-side__title">
+         <div class="monitor-side fr">
+          <div class="monitor-main">
 			<p>监控时长：100 h</p>
-
             <p>节省点检工时：58 h</p>
           </div>
-          <a href="#" class="promote-side__img"></a>
         </div>
+		 <div class="header-title">旋转设备的智能运维</div>
         </div>
-        <div class="header-title">旋转设备的智能运维</div>
       </div>
-    </div>
   </header>
 
   <nav id="nav">
@@ -330,7 +324,7 @@
 
 <div id="banner">
     <div class="page-width clearfix">
-	<div id="banner-container" style="width:400px;height:220px;margin:0 auto;float: left;"></div>
+	<div id="banner-container" style="width:40%;height:220px;margin:0 auto;float: left;"></div>
       <div class="banner-list fr">
         <ul>
           <li>
@@ -404,7 +398,7 @@
     <div class="page-width">
       <!-- 推广 -->
       <div class="mainCont clearfix" id="promote">
-        <div class="pic-list fl" style="width: 95%">
+        <div class="pic-list fl">
           <div class="pic-list__title">
             <i class="icon icon-promote"></i>
             <h2>电机参数</h2>
@@ -453,11 +447,10 @@
 
       <!-- 直播 -->
       <div class="mainCont clearfix" id="live" js-move="true">
-        <div class="pic-list fl" style="width: 480px;">
+        <div class="pic-list health-list fl">
           <div class="pic-list__title">
             <i class="icon icon-live"></i>
             <h2>健康指数</h2>
-            <p class="live-online">当前共有<em>233</em>条故障信息</p>
             <div class="more-wrap">
               <a href="#" class="dynamic"><i></i>2条新消息</a>
               <a href="#" class="more">更多<i></i></a>
@@ -470,7 +463,7 @@
 			  <p>（4）无法运行阶段：该阶段是电机寿命的最后阶段。电机可能不会完全损坏，但由于安全要求或其他因素，进入此阶段时应立即更换。此最终故障阈值也根据用户要求设置。在下面的示例中，我们将阈值设置为 CV = 0.4，具有足够的安全余量，以最大化组件的使用，同时给予维护人员足够的响应时间。从图 3-6 的频谱图中可以看出，转子两根断条时电机需要立即进行</p>
 			</div>
         </div>
-        <div class="main-side fr" js-tab="true">
+        <div class="health-pic fr" js-tab="true">
           <!--<div class="main-side__title">
           </div>-->
           <div id="jiangkangdu-leidatu" class="health-radar"></div>
@@ -527,29 +520,9 @@
           </div>
           <div class="main-side__cont">
             <ul class="main-rank">
-              <li class="item">
-                <a href="#"><i class="n1">1</i>人渣的本愿<span>全12话</span></a>
-              </li>
+              <li class="item"> <a href="#"><em class="n1">1</em>人渣的本愿<span>全12话</span></a> </li>
               <li class="item">
                 <a href="#"><i class="n2">2</i>小林家的龙女仆<span>更新至第12话</span></a>
-              </li>
-              <li class="item">
-                <a href="#"><i class="n3">3</i>双星之阴阳师<span>全12话</span></a>
-              </li>
-              <li class="item">
-                <a href="#"><i>4</i>珈百璃的堕落<span>更新至第12话</span></a>
-              </li>
-              <li class="item">
-                <a href="#"><i>5</i>怪怪守护神<span>全12话</span></a>
-              </li>
-              <li class="item">
-                <a href="#"><i>6</i>火影忍者 疾风传<span>全12话</span></a>
-              </li>
-              <li class="item">
-                <a href="#"><i>7</i>Hand Shakers<span>更新至第1话</span></a>
-              </li>
-              <li class="item">
-                <a href="#"><i>8</i>爱丽丝与藏六<span>全12话</span></a>
               </li>
             </ul>
             <a href="#" class="more">查看更多<i></i></a>
