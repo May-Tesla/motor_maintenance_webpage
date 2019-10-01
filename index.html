@@ -10,7 +10,7 @@
  <script type="text/javascript" src="js/jquery.js"></script>
  <script type="text/javascript" src="js/highstock.js"></script> 
  <script type="text/javascript" src="js/script.js"></script>
- <script type="text/javascript"src="https://code.highcharts.com.cn/highcharts/highcharts-more.js"></script>
+ <script type="text/javascript" src="js/highcharts-more.js"></script>
  <script type="text/javascript" src="js/gaikuangcishu.js"></script>
  <script type="text/javascript" src="js/jiangkangdu-leidatu.js"></script>
  <script type="text/javascript" src="js/health-cv.js"></script>
@@ -18,6 +18,7 @@
  <script type="text/javascript" src="js/detaildata-dianliu.js"></script>
  <script type="text/javascript" src="js/detaildata-zhendongxinhao.js"></script>
  <script type="text/javascript" src="js/detaildata-wendu.js"></script>
+ <script type="text/javascript" src="js/fixnav.js"></script>
 
 
 </head>
@@ -34,15 +35,12 @@
       
       <div class="header-top">
         <div class="page-width clearfix"><!--  装着左和右的box  -->
-         
           <div class="header-top__nav"><!--  header-top左边   -->
             <ul>
               <li class="item item-home">
                 <a href="#">主页</a>
               </li>
-              
               <li class="item"><a href="#">资源下载</a></li>
-              
               <li class="item">
                 <a href="#">智能监控</a>
                 <div class="game-center header-hover"><!--  外层   -->
@@ -55,18 +53,9 @@
                           <span>鬼鬼</span>
                         </a>
                       </div>
-                      
                        <div class="game-img">
                         <a href="#">
                           <img src="images/cont/game_img1.png" alt="#">
-                          <span>刀剑乱舞</span>
-                        </a>
-                        <a href="#">
-                          <img src="images/cont/game_img2.png" alt="#">
-                          <span>刀剑乱舞</span>
-                        </a>
-                        <a href="#">
-                          <img src="images/cont/game_img3.jpg" alt="#">
                           <span>刀剑乱舞</span>
                         </a>
                       </div>
@@ -84,10 +73,6 @@
                           <a href="#">仙剑奇侠传幻璃镜</a>
                           <a href="#">魔法禁书目录</a>
                           <a href="#">萌王EX</a>
-                          <a href="#">妖精的衣橱</a>
-                          <a href="#">神代梦华谭</a>
-                          <a href="#">碧蓝航线</a>
-                          <a href="#">光明大陆</a>
                         </div>
                         
                       </div>
@@ -97,8 +82,6 @@
                   <div id="gameImg"></div><!--  ？？？   -->
                 </div>
               </li>  
-              
-              
               <li class="item">
                 <a href="#">诊断分析</a>
                 <div class="live-box header-hover">
@@ -116,26 +99,6 @@
                           <i>LIVE</i>
                           <p>大角虫漫画</p>
                         </a>
-                        <a href="#">
-                          <img src="images/cont/live-box__img3.jpg" alt="#">
-                          <i>LIVE</i>
-                          <p>木本青</p>
-                        </a>
-                        <a href="#">
-                          <img src="images/cont/live-box__img4.gif" alt="#">
-                          <i>LIVE</i>
-                          <p>一只小鹿噜噜噜</p>
-                        </a>
-                        <a href="#">
-                          <img src="images/cont/live-box__img5.jpg" alt="#">
-                          <i>LIVE</i>
-                          <p>污叶妹屮</p>
-                        </a>
-                        <a href="#">
-                          <img src="images/cont/live-box__img6.jpg" alt="#">
-                          <i>LIVE</i>
-                          <p>污污_永远的魔法师_</p>
-                        </a>
                       </div><!--  内容   -->
                     </div>
                     
@@ -145,7 +108,6 @@
                   </div>
                 </div>
               </li>
-              
               <li class="item"><a href="#">设置</a></li>
               <li class="item">
                 <a href="#">关于我们</a>
@@ -216,7 +178,6 @@
         </li>
         <li class="item">
           <a href="#" class="link">
-            <div class="num"><i>999</i></div>
             详细数据
           </a>
           <ul class="nav-item__hover">
@@ -575,20 +536,6 @@
       </ul>
     </div>
   </footer>
-
-  <div id="sideBar">
-    <div class="sideBar-list">
-      <a href="#">概况</a>
-      <a href="#">参数</a>
-      <a href="#">健康</a>
-      <a href="#">详情</a>
-      <a href="#">算法</a>
-      <a href="#">下载</a>
-      <a href="#"><i></i>排序</a>
-    </div>
-    <div class="sideBar-line"></div>
-    <a href="#" class="sideBar-toTop" id="backTop"></a>
-  </div>
 
 	
 </body>

@@ -47,6 +47,7 @@ header {
   width: 30%;
   height: 50%;
 }
+
 .pic-list__title {
   position: relative;
   width: 100%;
@@ -144,7 +145,6 @@ header {
   height: 20px;
   margin-top: 6px;
   line-height: 20px;
-
   transition: height .3s;
 }
 .pic-list__wrapper .item:hover .img-info a {
@@ -958,8 +958,9 @@ header {
 
 /* ====== nav ====== */
 #nav {
-  position: relative;
   z-index: 998;
+  position: relative;
+  background: rgba(255,255,255,1.00);
 }
 .nav-list {
   float: left;
