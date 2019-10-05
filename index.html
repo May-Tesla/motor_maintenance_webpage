@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="css/index.css">
  <script type="text/javascript" src="js/jquery.js"></script>
  <script type="text/javascript" src="js/highstock.js"></script> 
- <script type="text/javascript" src="js/script.js"></script>
  <script type="text/javascript" src="js/highcharts-more.js"></script>
  <script type="text/javascript" src="js/gaikuangcishu.js"></script>
  <script type="text/javascript" src="js/jiangkangdu-leidatu.js"></script>
@@ -218,14 +217,13 @@
     <div class="page-width">
       <!-- 推广 -->
       <div class="mainCont clearfix" id="promote">
-        <div class="pic-list fl">
-          <div class="pic-list__title">
-            <i class="icon icon-promote"></i>
+        <div class="para-list fl">
+          <div class="para-list__title">
             <h2>电机参数</h2>
             <a href="#" class="promote-link">来感受技术的力量吧！</a>
           </div>
-          <ul class="pic-list__wrapper clearfix">
-			  <li class="pic-list-title">总体</li>
+          <ul class="para-list__wrapper clearfix">
+			  <li class="para-list-title">总体</li>
 			  <li>电机结构：B3型</li>
 			  <li>防护等级：IP44</li>
               <li>电机轴中心高度：</li>
@@ -235,8 +233,8 @@
 			  <li>重量：233KG</li>
 			  <li>极对数：3</li>
 			  </ul>
-		  <ul class="pic-list__wrapper clearfix">
-			  <li class="pic-list-title">轴承数据</li>
+		  <ul class="para-list__wrapper clearfix">
+			  <li class="para-list-title">轴承数据</li>
 			  <li>~</li>
               <li>电阻：</li>
 			  <li>功率：</li>
@@ -244,8 +242,8 @@
 			  <li>电流：A</li>
 			  <li>重量：KG</li>
 		  </ul>
-          <ul class="pic-list__wrapper clearfix">
-			  <li class="pic-list-title">转子数据</li>
+          <ul class="para-list__wrapper clearfix">
+			  <li class="para-list-title">转子数据</li>
 			  <li>电感：</li>
               <li>电阻：</li>
 			  <li>功率：</li>
@@ -253,8 +251,8 @@
 			  <li>电流：A</li>
 			  <li>重量：KG</li>
 		  </ul>
-		  <ul class="pic-list__wrapper clearfix">
-			  <li class="pic-list-title">定子数据</li>
+		  <ul class="para-list__wrapper clearfix">
+			  <li class="para-list-title">定子数据</li>
 			  <li>电感：</li>
               <li>电阻：</li>
 			  <li>功率：</li>
@@ -267,16 +265,15 @@
 
       <!-- 直播 -->
       <div class="mainCont clearfix" id="live" js-move="true">
-        <div class="pic-list health-list fl">
-          <div class="pic-list__title">
-            <i class="icon icon-live"></i>
+        <div class="para-list health-list fl">
+          <div class="para-list__title">
             <h2>健康指数</h2>
             <div class="more-wrap">
               <a href="#" class="dynamic"><i></i>2条新消息</a>
               <a href="#" class="more">更多<i></i></a>
             </div>
           </div>
-          <div class="pic-list-p">
+          <div class="para-list-p">
 			  <p>（1）正常运行阶段：在此阶段，电机处于正常情况，CV 值保持在高水平。这是电机在其大部分情况下运行的阶段。 如果 CV 值超过降级阈值，则初始故障开始，其设置取决于用户的要求，例如： CV = 0.8，电机进入轻微退化区域。</p>
 			  <p>（2）轻微退化阶段：在这个阶段，电机出现了轻微的退化，CV 值不断下降，但电机仍然可以维持运行。一旦 CV 值低于阈值或 CV 值的变化率显着增加，则认为电机遭受严重退化并进入第三阶段，恰好是严重的退化阶段。从图 3-8 的频谱图中可以看出，1 丝的偏心对电机存在一定的影响，但电机仍可以稳定运行一段时间。如果 CV 值超过降级阈值，例如： CV = 0.6，电机进入严重退化区域。</p>
 			  <p>（3）严重的退化阶段：在这个阶段，电机接近其寿命终点。虽然电机似乎运转良好，但可能会发生故障。在这种情况下，准确预测电机的健康度对于人员做出维护决策至关重要。从图 3-9 的频谱图中可以看出，轴承划痕对电机运行较严重的影响，电机需要尽快安排维护。</p>
@@ -293,18 +290,15 @@
 
       <!-- 详细数据 -->
       <div class="mainCont clearfix" id="animation" js-move="true">
-        <div class="pic-list fl" js-tab="true" style="width: 95%">
-          <div class="pic-list__title">
-            <i class="icon icon-animation"></i>
+        <div class="para-list fl" js-tab="true" style="width: 100%">
+          <div class="para-list__title">
             <h2>详细数据</h2>
-			<div class="tab-title-detaildata">
-              <li class="main-link-li">电流</li>
-              <li class="main-link-li">振动</li>
-              <li class="main-link-li">温度</li>
-             <div class="main-link-updata">
-              <a href="#">更新</a>
+			<div class="tab-title-detaildata main-link-li">
+              <li><a>电流</a></li>
+              <li><a>振动</a></li>
+              <li><a>温度</a></li>
 			</div>
-		    </div>
+             <div class="main-link-updata"><a href="#">更新</a></div>
           </div>
 		  <div id="detaildata-zhuansu" class="detaildata"></div>
 		  <div id="detaildata-dianliu" class="detaildata"></div>
@@ -315,8 +309,8 @@
 
       <!-- 番剧 -->
       <div class="weekCont clearfix" id="bangumi" js-move="true">
-        <div class="pic-list fl" js-tab="true">
-          <div class="pic-list__title">
+        <div class="para-list fl" js-tab="true">
+          <div class="para-list__title">
             <i class="icon icon-bangumi" style="float: left"></i>
             <h2 style="float: left">数据算法</h2>
             <div class="tab-title week-tab">
