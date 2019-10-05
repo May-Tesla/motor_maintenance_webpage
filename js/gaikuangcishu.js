@@ -2,7 +2,7 @@ $(function () {
 $(document).ready(function() {                                                  
 	
 		var chart;                                                                  
-	$('#banner-container').highcharts({                                                
+	$('#banner-warnnum').highcharts({                                                
 		chart: {                                                                
 			type: 'line',                                                     
 			animation: Highcharts.svg, // don't animate in old IE               
