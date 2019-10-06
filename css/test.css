@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+.contain{
+  width: 80%;
+  min-height: 240px;
+}
+.nav {
+  list-style-type: none;
+  display: block;
+}
+.tabs-choose div{
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  width: 300px;
+  height: 100px;
+  text-align: center;
+  vertical-align: middle;
+  background: rgba(222,222,222,1.00);
+}
+.tabs-title div{
+	margin: 10px;
+	padding: 20px;
+	min-height: 20px;
+	width: 80px;
+	float: left;
+	text-align: center;
+	background: rgba(242,242,242,1.00);
+	border-radius: 5px;
+	cursor: pointer;
+}
+.hidden{
+	display: none;
+}
+/* CSS Document */
+

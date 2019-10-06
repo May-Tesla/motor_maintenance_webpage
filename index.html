@@ -79,10 +79,10 @@
 	  <div class="nav-opc"><div class="page-width clearfix">
       <ul class="nav-list">
         <li class="item">
-          <a href="#" class="link">概览</a>
+          <a href="#banner" class="link">消息概览</a>
         </li>
         <li class="item">
-          <a href="#" class="link">健康指数</a>
+          <a href="#parameters" class="link">电机参数</a>
           <ul class="nav-item__hover">
             <li>
               <a href="#">
@@ -97,7 +97,7 @@
           </ul>
         </li>
         <li class="item">
-          <a href="#" class="link">详细数据</a>
+          <a href="#health" class="link">健康指数</a>
           <ul class="nav-item__hover">
             <li><a href="#"><em>电流数据<i></i></em></a></li>
             <li><a href="#"><em>振动信号<i></i></em></a></li>
@@ -106,36 +106,30 @@
           </ul>
         </li>
         <li class="item">
-          <a href="#" class="link">数据分析</a>
+          <a href="#detaildata" class="link">详细数据</a>
           <ul class="nav-item__hover">
             <li><a href="#"><em>振动信号<i></i></em></a></li>
             <li><a href="#"><em>电流信号<i></i></em></a></li>
           </ul>
         </li>
         <li class="item">
-          <a href="#" class="link">检测方法</a>
+          <a href="#algorithm" class="link">数据算法</a>
           <ul class="nav-item__hover">
-            <li><a href="#"><em>轴承<i></i></em></a></li>
-            <li><a href="#"><em>转子<i></i></em></a></li>
+            <li><a href="#"><em>电流<i></i></em></a></li>
+            <li><a href="#"><em>振动<i></i></em></a></li>
+			<li><a href="#"><em>温度<i></i></em></a></li>
           </ul>
         </li>
         <li class="item">
-          <a href="#" class="link">算法</a>
+          <a href="#download" class="link">相关下载</a>
             <ul class="nav-item__hover">
-              <li><a href="#"><em>频域分析<i></i></em></a></li>
-              <li><a href="#"><em>时域分析<i></i></em></a></li>
+              <li><a href="#"><em>程序代码<i></i></em></a></li>
+              <li><a href="#"><em>运行数据<i></i></em></a></li>
             </ul>
         </li>
         <li class="item">
-          <a href="#" class="link">数据</a>
-          <ul class="nav-item__hover">
-			<li><a href="#"><em>转速<i></i></em></a></li>
-            <li><a href="#"><em>频率<i></i></em></a></li>
-            <li><a href="#"><em>电流<i></i></em></a></li>
-            <li><a href="#"><em>温度<i></i></em></a></li>
-          </ul>
+          <a href="#historyerror" class="link">历史故障</a>
         </li>
-        <li class="item"><a href="#" class="link">历史故障</a></li>
       </ul>
 		<div class="nav-gif">
 			<ul><img src="images/cont/nav_img.gif" alt="鬼鬼">
@@ -215,8 +209,8 @@
 
   <div id="main">
     <div class="page-width">
-      <!-- 推广 -->
-      <div class="mainCont clearfix" id="promote">
+      <!--  电机参数  -->
+      <div class="mainCont clearfix" id="parameters">
         <div class="para-list fl">
           <div class="para-list__title">
             <h2>电机参数</h2>
@@ -263,8 +257,8 @@
         </div>
       </div>
 
-      <!-- 直播 -->
-      <div class="mainCont clearfix" id="live" js-move="true">
+      <!--  健康指数  -->
+      <div class="mainCont clearfix" id="health" js-move="true">
         <div class="para-list health-list fl">
           <div class="para-list__title">
             <h2>健康指数</h2>
@@ -288,41 +282,49 @@
         </div>
       </div>
 
-      <!-- 详细数据 -->
-      <div class="mainCont clearfix" id="animation" js-move="true">
+      <!--  详细数据  -->
+      <div class="mainCont clearfix" id="detaildata" js-move="true">
         <div class="para-list fl" js-tab="true" style="width: 100%">
           <div class="para-list__title">
             <h2>详细数据</h2>
 			<div class="tab-title-detaildata main-link-li">
-              <li><a>电流</a></li>
-              <li><a>振动</a></li>
-              <li><a>温度</a></li>
+              <li onClick="showDiv('detaildata-0')"><a>电流</a></li>
+              <li onClick="showDiv('detaildata-1')"><a>振动</a></li>
+			  <li onClick="showDiv('detaildata-2')"><a>温度</a></li>
 			</div>
              <div class="main-link-updata"><a href="#">更新</a></div>
           </div>
 		  <div id="detaildata-zhuansu" class="detaildata"></div>
-		  <div id="detaildata-dianliu" class="detaildata"></div>
-		  <div id="detaildata-zhendongxinhao" class="detaildata"></div>
-		  <div id="detaildata-wendu" class="detaildata">wendu</div>
+		  <div id="detaildata-0" class="detaildata"></div><!--  电流  -->
+		  <div id="detaildata-1" class="detaildata hidden"></div><!--  振动  -->
+		  <div id="detaildata-2" class="detaildata hidden"></div><!--  温度  -->
         </div>
       </div>
 
       <!--  数据算法  -->
-      <div class="weekCont clearfix" id="bangumi" js-move="true">
+      <div class="weekCont clearfix" id="algorithm" js-move="true">
         <div class="para-list fl" js-tab="true">
           <div class="para-list__title">
             <h2>数据算法</h2>
             <div class="tab-title-detaildata main-link-li">
-              <li><a>电流</a></li>
-              <li><a>振动</a></li>
-              <li><a>温度</a></li>
+              <li onClick="showDiv('algorithm-0')"><a>电流</a></li>
+              <li onClick="showDiv('algorithm-1')"><a>振动</a></li>
+			  <li onClick="showDiv('algorithm-2')"><a>温度</a></li>
             </div>
             <div class="main-link-updata"><a href="#">更新</a></div>
           </div>
-         <div class="data-analyze">
-			<p>感应电机的定子电流信号特征分析法（MCSA）提供了可以在非入侵的情况下进行电机健康状态监测与故障诊断的一种最为简便的方法。由此构成了基于状态监测的设备维护（CBM）的技术方案。从感应电机数学模型上来说，当感应电机拖动恒定的负载以一定的转速进行稳定运行时，可以通过对其定子电流信号进行傅立叶频谱分析有效识别其对应各种故障的特征频率。</p>
+         <div class="data-algorithm">
+			<div id="algorithm-0">
+			 <p>感应电机的定子电流信号特征分析法（MCSA）提供了可以在非入侵的情况下进行电机健康状态监测与故障诊断的一种最为简便的方法。由此构成了基于状态监测的设备维护（CBM）的技术方案。从感应电机数学模型上来说，当感应电机拖动恒定的负载以一定的转速进行稳定运行时，可以通过对其定子电流信号进行傅立叶频谱分析有效识别其对应各种故障的特征频率。</p>
 			</div>
-		  </div>
+			<div id="algorithm-1" class="hidden">
+			 <p>传统的 MCSA 方法在对感应电机进行故障诊断时的局限性主要是由于故障特征频率产生原理与信号处理工具适用性的矛盾共同作用所导致的。因此，本章从电机在不同负载工况下工作时定子电流中各种故障特征频率的识别准确率入手进行研究。对感应电机在不同负载工况下工作时，其定子电流频谱图中所包含各种故障频率的成分结构进行理论分析。提出基于一种基于相关性算法的实现基波信号自适应滤波的算法，并通过该方法提高感应电机故障诊断的准确率，并通过实验验证该算法的有效性。</p>
+			</div>
+			<div id="algorithm-2" class="hidden">
+			 <p>由于在现场的实际使用中可以很容易检测到定子电流的信号，所以在异步感应电机识别其转子断条故障的识别过程中这组边频分量信号就可以作为特征分量信号。但是在感应电机出现转子断条故障的初期阶段，其特征分量的幅值相较于工频分量而言十分小。</p>
+			</div>
+		 </div>
+		</div>
       </div>
 
     </div>

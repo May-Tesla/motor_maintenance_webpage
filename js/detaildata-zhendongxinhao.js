@@ -35,7 +35,7 @@ $(function () {
 $(document).ready(function() {                                                  
 
 var chart;                                                                  
-	$('#detaildata-zhendongxinhao').highcharts({ 
+	$('#detaildata-1').highcharts({ 
 	chart: {
 		zoomType: 'x'
 	},

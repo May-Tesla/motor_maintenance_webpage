@@ -2,21 +2,21 @@ $(function () {
 $(document).ready(function() {                                                  
 
 	var chart;                                                                  
-	$('#detaildata-0').highcharts({                                                
+	$('#detaildata-2').highcharts({                                                
 		chart: {                                                                
 			type: 'line',                                                     
 			animation: Highcharts.svg, // don't animate in old IE               
 			marginRight: 120,   
 		},
 		title: {
-				text: '三相电流数据'
+				text: '温度数据'
 		},
 		subtitle: {
 				text: '数据来源：电机'
 		},
 		yAxis: {
 				title: {
-						text: '电流（A）'
+						text: '摄氏度（'C'）'
 				}
 		},
 		legend: {
@@ -33,11 +33,11 @@ $(document).ready(function() {
 				}
 		},
 		series: [
-			     {name: '第一相',
+			     {name: '第一处',
 				  data: [43.934, 52.503, 57.177, 69.658, 97.031, 11.9931, 13.7133, 15.4175]},
-				 {name: '第二相',
+				 {name: '第二处',
 				  data: [24.916, 24.064, 29.742, 29.851, 32.490, 30.282, 38.121, 40.434]}, 
-				 {name: '第三相',
+				 {name: '第三处',
 				  data: [11.744, 17.722, 16.005, 19.771, 20.185, 24.377, 32.147, 39.387]}
 		        ],
 		responsive: {
