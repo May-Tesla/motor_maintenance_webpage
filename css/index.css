@@ -169,40 +169,42 @@ header {
 .para-list__title .tab-title {
 	float: left;
 	vertical-align: top;
-	margin-top: 10px;
-	margin-right: 10px;
-	margin-left: 10px;
-	margin-bottom: 10px;
+	margin: 10px;
 	width: 350px;
 	height: 20px;
 }
 .para-list__title .tab-title a {
   	margin-right: 40px;
 }
-.para-list-p p {
+.para-list-p{
+	margin: 5px 0 20px 0;
+}
+.para-list-p p{
 	font-size:14px;
-	padding: 10px;
+	padding: 5px 15px;
 	text-align: justify;
+	line-height: 20px;
+	text-indent: 2em;
 }
 .health-list {
     width: 45%;
 }
 .health-pic{
-	width:50%;
+	width:55%;
+	float: left;
 }
 .health-radar {
-	height: auto;
-	width: 420px;
-	float: right;
+	min-height: 350px;
+	width: 100%;
+	float: left;
 	margin: 3px;
-	background: rgba(233,233,233,1.00);
-	z-index: 3;
+    padding: 0 0 0 6%;
 }
 .detaildata{
     min-height: 330px;
     width: 96%;
     float: left;
-    background: rgba(200,236,255,1.00);
+    background: rgba(255,255,255,1.00);
 	margin:10px;
 }
 .detaildata p{
@@ -236,25 +238,23 @@ header {
 
 }
 .main-link-updata {
-	height: 20px;
-	position: absolute;
-	top:28%;
-	right: 0%;
-	width: 7%;
-	padding: 5px;
-	line-height: 20px;
-	font-size: 14px;
-	background: rgba(252,252,252,1.00);
-	border: .5px solid #FF579B;
-	border-radius: 3px;
-	text-align: center;
+  position: relative;
+  float: right;
+  width: 94px;
+  height: 34px;
+  padding: 0px;
+  line-height: 34px;
+  margin-top: 18px;
+  margin-right: 14px;
+  border: 1px solid #f25d8e;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #f25d8e;
+  text-align: center;
 }
 .main-link-updata :hover {
-	background: #FF579B;
-}
-.main-link-updata a:hover {
-	text-align: center;
-	color: rgba(255,255,255,1.00);
+  color: #fff;
+  background-color: #f25d8e;
 }
 .para-list .tab-cont__item {
   display: none;
@@ -265,7 +265,7 @@ header {
 .data-analyze {
   min-height: 200px;
   margin: 10px;
-  background: rgba(230,230,230,1.00);
+  float: left;
 }
 /* 主体内容 >> 右侧 */
 .main-side__title {
